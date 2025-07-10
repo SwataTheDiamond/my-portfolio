@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Quick basic styling you can expand or replace */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    h1, h2 {
+      margin-bottom: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Projects</h1>
-  <p>This is my website hosted on GitHub Pages!</p>
+
+  <header>
+    <h1>Lyon Manono</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <p>
+        Experienced programmer proficient in C, C++, and Python with a strong academic background.
+        Skilled in problem-solving, debugging, and developing innovative programs.
+      </p>
+    </section>
+
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Snake Game:</strong> A classic snake game built with Python and Pygame.</li>
+        <li><strong>Pong Game:</strong> Multiplayer Pong clone showcasing collision and game loop logic.</li>
+        <li><strong>Hangman:</strong> Word guessing terminal game using Python logic and lists.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="reveal">
+      <h2>Contact</h2>
+      <p>You can reach me at <a href="mailto:manonojnr@gmail.com">manonojnr@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lyon Manono. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
